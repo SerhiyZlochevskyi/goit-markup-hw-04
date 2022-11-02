@@ -46,10 +46,12 @@ align-items:center ;
   display: flex;
 align-items:center ;
 }
+
 .header-contakt {
   display: flex;
   margin-left: auto;
 }
+
 .header-contakt .item + .item {
   margin-left: 50px;
 }
@@ -123,15 +125,27 @@ img {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: var(--o-nas-color);
+  color: var(--o-nas-color); */
 }
 /* Заголовок */
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
 
-background: var(--bg-screan-footer-color);
+/* background: var(--bg-screan-footer-color); */
+}
+.overlay {
+  max-width: 1600px;
+ min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+
+  /* background-image: url(../images/geroy.jpg); */
+  background-position: center;
+ background-size: cover;
+
 }
 .hero-title {
   width: 694px;
@@ -159,6 +173,7 @@ background: var(--bg-screan-footer-color);
 }
 
 /* УВАГА ДО ДЕТАЛЕЙ */
+
 .about-list{
 display: flex;
 
@@ -168,6 +183,29 @@ margin-right: 30px;
 }
 .about-list .item{
   flex-basis: calc((100% - 90px) / 3);
+}
+.list-item::before{
+display:block;
+content:"" ;
+height: 120px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
+}
+.icon-antenna::before{
+  background-image:url(../images/antenna\ 1.svg)
+}
+.icon-clock::before{
+  background-image: url(../images/clock\ 1.svg);
+}
+.icon-diagram::before{
+  background-image: url(../images/diagram\ 1.svg);
+}
+.icon-astronaut::before{
+  background-image: url(../images/astronaut\ 1.svg);
 }
 .about-list-text {
   margin-bottom: 10px;
@@ -217,6 +255,7 @@ box-sizing: border-box;
 .devaise-list-text{
   display: flex;
 }
+
 .name-comands-list {
   display: flex;
   justify-content: space-around;
@@ -228,6 +267,7 @@ box-sizing: border-box;
 .container-commands-cart{
 padding: 30px 10px;
 }
+
 .name-programist {
   margin-bottom: 10px;
   font-weight: 500;

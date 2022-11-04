@@ -490,5 +490,52 @@ border-radius: 4px
   background: #FFFFFF;
   
 }
-.footer-info .social-ul{
-display: flex;
+
+ .social-ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  left: 10px;
+  /* outline: 1px solid red; */
+ }
+ .social-ul .link-icon{
+  position: relative;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+  fill: var(--currentColor);
+ }
+ .footer-info{
+  position: relative;
+  bottom: 120px;
+  left: 0;
+ 
+  /* outline: 2px solid teal; */
+  margin-right: 0px;
+
+ }
+ .priednuysa{
+    line-height: calc(16/14);
+    color: var(--text-section-footer-color);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+ }
+ .link-icon{
+  
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  right: 500px;
+  margin-top: 0px;
+  margin-right: 0px;
+ }
+ .social-item-ft .link-icon:hover{
+    fill: var(--icon-social-accent-color);
+    background-color: var(--focus-color);
+    border-radius: 50%
+ }

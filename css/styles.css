@@ -11,11 +11,15 @@
   --logo-studia-color: #0000;
   --header-studio-color: #000000;
    --border-cards-color: #EEEEEE;
+   --icon-currentColor: #AFB1B8;
+   --icon-accent-partners-color:#2196F3;
+    --icon-social-accent-color:#fff;
   }
  body {
+  
    font-family: 'Roboto' , sans-serif ;
-   background-color: #fff;
-   color: #757575;
+   background-color: var(--bg-header-color);
+    fill: var(--icon-currentColor)
   }
 /* header */
 .list {
@@ -280,27 +284,27 @@ padding: 30px 10px;
   letter-spacing: 0.03em;
   color: var(--o-nas-color);
 }
-.sotset{
-  display: flex;
-  margin-top:auto;
-  margin-left: auto;
- justify-content: center;
-  height: auto;
-  /* outline: 1px solid red; */
+.container-commands-cart .list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
-.soset-li{
+.social-item .link {
   display: flex;
-  margin-top: 15px;
-  height: 44px;
+  align-items: center;
+  justify-content: center;
   width: 44px;
+  height: 44px;
+  fill: var(--icon-currentColor);
+
 }
-.sotset-icon{
-  
-  width: 20px;
-  height: 20px;
+
+.social-item .link:hover {
+  fill: var(--icon-social-accent-color);
+  background-color: var(--focus-color);
+  border-radius: 50%
 }
-.name-comands-img{
-}
+
 .name-comands-programist {
   width: 270px;
   background: var(--bg-header-color);
@@ -308,6 +312,19 @@ padding: 30px 10px;
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.client{
+  display: flex;
+  justify-content:space-around;
+}
+.svg-icon{
+    border: 1px solid var(--icon-currentColor);
+    border-radius: 4px;
+    fill: var(--icon-currentColor);
+}
+.svg-icon:hover{
+  fill: var(--icon-accent-partners-color);
+  border-color: var(--icon-accent-partners-color);
+  }
 /* footer */
 .footer {
   height: 252px;
@@ -473,3 +490,5 @@ border-radius: 4px
   background: #FFFFFF;
   
 }
+.footer-info .social-ul{
+display: flex;

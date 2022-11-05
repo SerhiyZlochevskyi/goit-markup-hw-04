@@ -113,9 +113,16 @@ img {
 .list-aktive-link:hover,
 .list-aktive-link:focus {
   color: var(--focus-color);
+  fill: var(--icon-accent-partners-color);
 }
 .kurent {
   color: var(--focus-color);
+}
+/* иконки тел. и меил */
+.contacts-icon {
+  vertical-align: middle;
+	margin-right: 10px;
+  color: var(--o-nas-color);
 }
 
 .header-tel-link {
@@ -370,6 +377,53 @@ padding: 30px 10px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+/* футер сотсети */
+
+.social-ul{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* left: 10px; */
+  /* outline: 1px solid red; */
+ }
+
+ .footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+ }
+ .ft-info .social-ul {
+  display: flex;
+  justify-content: center;
+  position: relative;
+ }
+ .social-ul .link-icon {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    fill: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%
+ }
+  /* outline: 2px solid teal; */
+
+ .priednuysa{
+    font-size: 14px;
+    line-height: calc(16/14);
+    color: var(--text-section-footer-color);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+ }
+ .link-icon:hover{
+  fill: var(--icon-social-accent-color);
+    background-color: var(--focus-color);
+    border-radius: 50%
+ }
+
 
 /* Поттфолио */
 .portfolio-blok{
@@ -490,52 +544,3 @@ border-radius: 4px
   background: #FFFFFF;
   
 }
-
- .social-ul{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  left: 10px;
-  /* outline: 1px solid red; */
- }
- .social-ul .link-icon{
-  position: relative;
-  display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 44px;
-	height: 44px;
-  fill: var(--currentColor);
- }
- .footer-info{
-  position: relative;
-  bottom: 120px;
-  left: 0;
- 
-  /* outline: 2px solid teal; */
-  margin-right: 0px;
-
- }
- .priednuysa{
-    line-height: calc(16/14);
-    color: var(--text-section-footer-color);
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
- }
- .link-icon{
-  
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
-  position: relative;
-  right: 500px;
-  margin-top: 0px;
-  margin-right: 0px;
- }
- .social-item-ft .link-icon:hover{
-    fill: var(--icon-social-accent-color);
-    background-color: var(--focus-color);
-    border-radius: 50%
- }
